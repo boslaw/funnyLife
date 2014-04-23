@@ -1,0 +1,21 @@
+{
+  "main": "index.html",
+  "name": "funnyLife",
+  "description": "funnyLife",
+  "version": "0.1.0",
+  "keywords": [ "funnyLife", "funnyLife" ],
+  "window": {
+    "title": "funnyLife",
+    "icon": "icon.png",
+    "toolbar": false,
+    "frame": true,
+    "position": "mouse",
+	"no-edit-menu":false,
+	"fullscreen": false,
+    "width": 622,
+    "height": 622
+  },
+  "webkit": {
+    "plugin": true
+  }
+}

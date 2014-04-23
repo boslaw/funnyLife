@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        #fLife{border: 1px black solid;}
+        #stations{
+            position: absolute;
+            left: 8px;
+            top: 8px;
+            border: 1px solid black;
+        }
+        #start{
+            width: 150px!important;
+            float: none!important;
+        }
+        #settings{
+            position: absolute;
+            top: 120px;
+            border: 1px black solid;
+            left: 152px;
+            padding: 5px;
+            width: 300px;
+            background-color: white;
+        }
+        #settings input{
+            width: 40px;
+            float: right;
+            display: inline-block;
+        }
+        #settings label{
+            display: block;
+        }
+        #log{
+            font-size: 12px;
+            line-height: 10px;
+            position: absolute;
+            top: 8px;
+            left: 210px;
+            padding: 5px;
+            max-height: 590px;
+            overflow-y: hidden;
+            color: white;
+        }
+        .hide{
+            display: none;
+        }
+    </style>
+    <script src="js/script.js"></script>
+</head>
+<body>
+<canvas id="fLife" width="600" height="600"></canvas>
+<canvas id="stations" width="600" height="600"></canvas>
+<div id="settings">
+<label for="startCount">Початкова кількість:<input id="startCount" type="number" value="5"/></label><br/>
+<label for="moneyPlus">Прибуток деталей за день на роботі:<input id="moneyPlus" type="number" value="7"/></label><br/>
+<label for="replMoney">Деталей на відтворення:<input id="replMoney" type="number" value="15"/></label><br/>
+<label for="eatMinus">Витрати енергії:<input id="eatMinus" type="number" value="5"/></label><br/>
+<label for="sleepMinus">Втома за день:<input id="sleepMinus" type="number" value="4"/></label><br/>
+<label for="eatPlus">Заправка енергією за день на заряді:<input id="eatPlus" type="number" value="35"/></label><br/>
+<label for="sleepPlus">Бали відпочинку за день вдома:<input id="sleepPlus" type="number" value="40"/></label><br/>
+<label for="minAge">Мінімальний вік виходу з ладу:<input id="minAge" type="number" value="45"/></label><br/>
+<label for="maxAge">Максимальний вік виходу з ладу:<input id="maxAge" type="number" value="90"/></label><br/>
+<input type="button" id="start" value="Почати"/>
+</div>
+<div id="log"></div>
+<audio autoplay="autoplay" loop="loop">
+    <source src="sounds/sound.mp3" type="audio/mpeg">
+    Your browser does not support the audio tag.
+</audio>
+</body>
+</html>
